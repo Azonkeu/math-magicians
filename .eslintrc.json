@@ -20,7 +20,9 @@
     "import/no-unresolved": "off",
     "no-eval": "off",
     "no-mixed-operators": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "import/no-named-as-default": 0,
+    "react/prefer-stateless-function": 0
   },
   "ignorePatterns": [
     "dist/",
