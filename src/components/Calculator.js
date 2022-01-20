@@ -1,59 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
-// eslint-disable-next-line react/prefer-stateless-function
-class Calculate extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-    this.handleButtonClick = this.handleButtonClick.bind(this);
-  }
+function Calculate() {
+  const [object, setObject] = useState({});
 
-  handleButtonClick(e) {
+  const handleButtonClick = (e) => {
     const buttonName = e.target.textContent;
-    const newObj = calculate(this.state, buttonName);
-    this.setState(newObj);
-  }
+    const newObj = calculate(object, buttonName);
+    setObject(newObj);
+  };
 
-  render() {
-    const { next, total, operation } = this.state;
-    let result = '';
-    if (total) {
-      result = `${total} ${operation || ''} ${next || ''}`;
-    } else if (next) {
-      result = next;
-    }
-    return (
-      <div className="App">
-        <div className="calculator">
-          <div className="display">
-            <span className="span">{result}</span>
-          </div>
-          <div className="numbers">
-            <button type="button" className="btn" onClick={this.handleButtonClick}>AC</button>
-            <button type="button" className="btn" onClick={this.handleButtonClick}>+/-</button>
-            <button type="button" className="btn" onClick={this.handleButtonClick}>%</button>
-            <button type="button" className="btn oran" onClick={this.handleButtonClick}>÷</button>
-            <button type="button" className="btn" onClick={this.handleButtonClick}>7</button>
-            <button type="button" className="btn" onClick={this.handleButtonClick}>8</button>
-            <button type="button" className="btn" onClick={this.handleButtonClick}>9</button>
-            <button type="button" className="btn oran" onClick={this.handleButtonClick}>x</button>
-            <button type="button" className="btn" onClick={this.handleButtonClick}>4</button>
-            <button type="button" className="btn" onClick={this.handleButtonClick}>5</button>
-            <button type="button" className="btn" onClick={this.handleButtonClick}>6</button>
-            <button type="button" className="btn oran" onClick={this.handleButtonClick}>-</button>
-            <button type="button" className="btn" onClick={this.handleButtonClick}>1</button>
-            <button type="button" className="btn" onClick={this.handleButtonClick}>2</button>
-            <button type="button" className="btn" onClick={this.handleButtonClick}>3</button>
-            <button type="button" className="btn oran" onClick={this.handleButtonClick}>+</button>
-            <button type="button" className="btn zero" onClick={this.handleButtonClick}>0</button>
-            <button type="button" className="btn" onClick={this.handleButtonClick}>.</button>
-            <button type="button" className="btn oran" onClick={this.handleButtonClick}>=</button>
-          </div>
+  const { next, total, operation } = object;
+  let result = '';
+  if (total) {
+    result = `${total} ${operation || ''} ${next || ''}`;
+  } else if (next) {
+    result = next;
+  }
+  return (
+    <div className="App">
+      <div className="calculator">
+        <div className="display">
+          <span className="span">{result || 0}</span>
+        </div>
+        <div className="numbers">
+          <button type="button" className="btn" onClick={handleButtonClick}>AC</button>
+          <button type="button" className="btn" onClick={handleButtonClick}>+/-</button>
+          <button type="button" className="btn" onClick={handleButtonClick}>%</button>
+          <button type="button" className="btn oran" onClick={handleButtonClick}>÷</button>
+          <button type="button" className="btn" onClick={handleButtonClick}>7</button>
+          <button type="button" className="btn" onClick={handleButtonClick}>8</button>
+          <button type="button" className="btn" onClick={handleButtonClick}>9</button>
+          <button type="button" className="btn oran" onClick={handleButtonClick}>x</button>
+          <button type="button" className="btn" onClick={handleButtonClick}>4</button>
+          <button type="button" className="btn" onClick={handleButtonClick}>5</button>
+          <button type="button" className="btn" onClick={handleButtonClick}>6</button>
+          <button type="button" className="btn oran" onClick={handleButtonClick}>-</button>
+          <button type="button" className="btn" onClick={handleButtonClick}>1</button>
+          <button type="button" className="btn" onClick={handleButtonClick}>2</button>
+          <button type="button" className="btn" onClick={handleButtonClick}>3</button>
+          <button type="button" className="btn oran" onClick={handleButtonClick}>+</button>
+          <button type="button" className="btn zero" onClick={handleButtonClick}>0</button>
+          <button type="button" className="btn" onClick={handleButtonClick}>.</button>
+          <button type="button" className="btn oran" onClick={handleButtonClick}>=</button>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Calculate;
