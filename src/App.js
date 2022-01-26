@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom';
 import Calculate from './components/Calculator';
 
-// eslint-disable-next-line react/prefer-stateless-function
 const App = () => (
   <Router>
     <nav className="nav">
