@@ -39,7 +39,7 @@
 - Vscode
 
 ## Demo
-Check out the [live version](https://Azonkeu.github.io/math-magicians/) of the website for more details.
+Check out the [live version](https://azonkeu.github.io/Home) of the website for more details.
 
 ### Screenshot
 ![image](https://www.linkpicture.com/q/calculat.png)
