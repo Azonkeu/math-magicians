@@ -41,6 +41,9 @@
 ## Demo
 Check out the [live version](https://Azonkeu.github.io/math-magicians/) of the website for more details.
 
+### Screenshot
+![image](https://www.linkpicture.com/q/calculat.png)
+
 
 ## 👩Author
 - Github: [Azonkeu](https://github.com/Azonkeu)
@@ -50,6 +53,6 @@ Check out the [live version](https://Azonkeu.github.io/math-magicians/) of the w
 Give a ⭐️ if you like this project!
 
 
-## 📝lICENSE
+## 📝license
 
 This project is [MIT](https://github.com/Azonkeu/math-magicians/blob/develop/LICENSE) licensed.
