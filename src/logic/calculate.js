@@ -74,7 +74,7 @@ export default function calculate(obj, buttonName) {
     }
     return {};
   }
-  
+
   if (!obj.next && obj.total && !obj.operation) {
     return { ...obj, operation: buttonName };
   }

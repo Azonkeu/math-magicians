@@ -34,12 +34,24 @@
   
 *Technologies used:* 
 
-- Github
-- Git 
-- Vscode
+- **Github**
+- **Git** 
+- **Vscode**
+  
+*Packages*
+
+- **npm install**
+- **npm start**
+- **npm run deploy**
+- **npm install gh-pages**
+- **npm install react-router-dom@6**
+- **npm i react-router**
 
 ## Demo
-Check out the [live version](https://Azonkeu.github.io/math-magicians/) of the website for more details.
+Check out the [live version](https://azonkeu.github.io/math-magicians/) of the website for more details.
+
+### Screenshot
+![image](https://www.linkpicture.com/q/calculat.png)
 
 
 ## 👩Author
@@ -50,6 +62,6 @@ Check out the [live version](https://Azonkeu.github.io/math-magicians/) of the w
 Give a ⭐️ if you like this project!
 
 
-## 📝lICENSE
+## 📝license
 
 This project is [MIT](https://github.com/Azonkeu/math-magicians/blob/develop/LICENSE) licensed.
