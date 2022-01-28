@@ -32,14 +32,14 @@ export const Home = () => (
   </section>
 );
 
-const Calculator = () => (
+export const Calculator = () => (
   <section className="section-two">
     <h1 className="section-title">Let&apos;s do some math!</h1>
     <Calculate />
   </section>
 );
 
-const Quote = () => (
+export const Quote = () => (
   <section className="section-three">
     <p className="text">Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. -William Paul Thurston</p>
   </section>
