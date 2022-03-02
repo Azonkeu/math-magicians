@@ -49,8 +49,6 @@
 
 ## Demo
 - Check out the [live version](https://azonkeu.github.io/math-magicians/) of the website for more details.
-- Check out the [live version on heroku](https://math-magicix.herokuapp.com/).
-- Check out the [live version on Netlify](https://focused-perlman-a20d17.netlify.app/).
 
 ### Screenshot
 ![image](https://www.linkpicture.com/q/calculat.png)
